@@ -15,11 +15,11 @@ logsource:
 detection:
     selection:
         - Image|endswith:
-            - '\AddInProcess.exe'
-            - '\AddInProcess32.exe'
+              - '\AddInProcess.exe'
+              - '\AddInProcess32.exe'
         - OriginalFileName:
-            - 'AddInProcess.exe'
-            - 'AddInProcess32.exe'
+              - 'AddInProcess.exe'
+              - 'AddInProcess32.exe'
     condition: selection
 falsepositives:
     - Legitimate WPF applications that use the .NET add-in framework (MAF). Very uncommon on servers
